@@ -1,20 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent, NavigationComponent } from './app.component';
-
+import { ApplicationComponent } from './application.component';
+import { ArticleComponent } from './application.component';
 @NgModule({
   declarations: [
-    AppComponent,
-    NavigationComponent
+	ApplicationComponent,
+	ArticleComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent,NavigationComponent]
+  bootstrap: [ApplicationComponent,ArticleComponent]
 })
-export class AppModule { }
+export class ApplicationModule { }
 // I added a class to the custom components
 // Then i added it in declaration
 // Then i added it in bootstrap
